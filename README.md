@@ -1,6 +1,6 @@
 # <p align="center">YouTube Ad Blocker Popup Removal</p>
 
-<p align="center"><img width="500" src="https://github.com/sauravhathi/codetantra-enable-copy-and-paste/assets/61316762/fb0a6890-d567-4d24-a13f-f1418524fc74" alt="youtube-ad-blocker-popup-removal"></p>
+<p align="center"><img width="100" src="https://github.com/sauravhathi/youtube-ad-blocker-popup-removal/blob/master/images/icon128.png" alt="youtube-ad-blocker-popup-removal"></p>
 
 <p align="center">YouTube Ad Blocker Popup Removal is a Google Chrome extension that removes the annoying popup that appears when you try to skip an ad on YouTube.</p>
 
