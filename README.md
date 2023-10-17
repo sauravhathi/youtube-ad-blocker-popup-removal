@@ -22,7 +22,7 @@ Follow these simple steps to install the extension:
 
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
 
-## Support the Developer :heart:
+## Support the Developer
 
 If you find this project useful and want to support its development, consider buying us a coffee! Your support is greatly appreciated.
 
