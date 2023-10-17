@@ -1,32 +1,28 @@
-# <p align="center"> Examly Copy Paste Extension </p>
+# <p align="center">YouTube Ad Blocker Popup Removal</p>
 
-<p align="center">
- <img src="https://github.com/sauravhathi/examly-copy-paste/blob/master/images/icon128.png" alt="logo" style="width: 150px">
-</p>
+<p align="center"><img width="500" src="https://github.com/sauravhathi/codetantra-enable-copy-and-paste/assets/61316762/fb0a6890-d567-4d24-a13f-f1418524fc74" alt="youtube-ad-blocker-popup-removal"></p>
 
-
-This is a chrome extension that helps you copy the question and paste. Double click on the question or the options to copy the text.
+<p align="center">YouTube Ad Blocker Popup Removal is a Google Chrome extension that removes the annoying popup that appears when you try to skip an ad on YouTube.</p>
 
 ## Installation
 
-1. Clone the repository
-2. Open chrome://extensions
-3. Enable developer mode
-4. Click on load unpacked
-5. Select the folder where you cloned the repository
-6. You are good to go!
+Follow these simple steps to install the extension:
 
-## Usage
+1. **Clone or Download:** Clone this repository or download it as a zip file and extract it.
 
-1. Open the examly test
-2. Click double click on the question or the options to copy the text
-3. Paste it anywhere you want
+2. **Open Chrome Extensions:** In your Google Chrome browser, navigate to `chrome://extensions/`.
+
+3. **Enable Developer Mode:** Enable the developer mode in the top right corner of the extensions page.
+
+4. **Load Unpacked Extension:** Click on "Load unpacked" and select the folder where you extracted the repository.
+
+5. **Done:** The extension should now be installed and working. You can test it by playing a YouTube video with ads and trying to skip the ad.
 
 ## Contributing
 
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
 
-## Donation
+## Support the Developer :heart:
 
 If you find this project useful and want to support its development, consider buying us a coffee! Your support is greatly appreciated.
 
@@ -38,7 +34,7 @@ Donate: `saurav.34@paytm`
 
 ## License
 
-This project is licensed under the MIT License. See the [LICENSE](https://github.com/sauravhathi/examly-copy-paste/blob/master/LICENSE) file for details.
+This project is licensed under the MIT License. See the [LICENSE](https://github.com/sauravhathi/youtube-ad-blocker-popup-removal/blob/master/LICENSE) file for details.
 
 ## Author
 

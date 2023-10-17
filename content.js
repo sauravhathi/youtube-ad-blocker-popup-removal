@@ -1,54 +1,47 @@
 console.log('👨‍💻 Author: Saurav Hathi \n🌟 GitHub: https://github.com/sauravhathi \n🚀Linkedin: https://www.linkedin.com/in/sauravhathi');
 
-// code div.ace_content  ace_layer ace_text-layer
-
-async function copyTextToClipboard(text) {
-  if (!text) {
-    return Promise.reject("Text not found");
-  }
-
-  return navigator.clipboard.writeText(text)
-    .then(() => 'Copied to clipboard!')
-    .catch((error) => {
-      throw new Error(`Error copying to clipboard: ${error}`);
-    });
-}
-
 /**
- * Watches for a specific element and copies its text to clipboard on double click.
- * @function
- * @returns {void}
+ * Watches for the presence of a YouTube ad blocker popup and removes it.
+ * Also adds a "Donate" button to the video owner's profile.
  */
 function watchForElement() {
-  const targetSelector = 'div[aria-labelledby="each-type-question"]';
+  const backdropSelector = "tp-yt-iron-overlay-backdrop.opened";
+  const dialogSelector = "tp-yt-paper-dialog";
+  const playButtonSelector = ".ytp-play-button.ytp-button";
 
-  /**
-   * Handles the double click event on the target element and copies its text to clipboard.
-   * @function
-   * @param {Event} event - The double click event.
-   * @returns {void}
-   */
-  const handleDoubleClick = (event) => {
-    const targetElement = event.target.closest(targetSelector);
-    if (targetElement) {
-      const cleanedText = targetElement.innerText.replace(/\n{3,}/g, '\n');
-      copyTextToClipboard(cleanedText)
-        .then((message) => {
-          console.log(message);
-        })
-        .catch((error) => {
-          alert(error.message);
-        });
+  const donateBtn = document.createElement("button");
+  donateBtn.innerHTML = "Donate";
+  donateBtn.classList.add("donate-btn");
+  donateBtn.addEventListener("click", () => {
+    window.open("https://github.com/sauravhathi/youtube-ad-blocker-popup-removal#support-the-developer");
+  });
+
+  const observer = new MutationObserver(function (mutations) {
+    const backdrop = document.querySelector(backdropSelector);
+    const dialog = document.querySelector(dialogSelector);
+    const playButton = document.querySelector(playButtonSelector);
+    const p = document.querySelector("div#owner");
+
+    // If the backdrop and dialog exist, remove them.
+    if (backdrop) {
+      backdrop.remove();
     }
-  };
 
-  document.addEventListener('dblclick', handleDoubleClick);
-
-  const observer = new MutationObserver((mutationsList, observer) => {
-    if (document.querySelector(targetSelector)) {
+    // If the dialog exists, remove it and click the play button.
+    if (dialog) {
+      dialog.remove();
+      if (playButton) {
+        playButton.click();
+      }
+      if (p) {
+        // Add the donate button to the video owner's profile.
+        p.appendChild(donateBtn);
+      }
       observer.disconnect();
     }
+
   });
+
   observer.observe(document, { childList: true, subtree: true });
 }
 

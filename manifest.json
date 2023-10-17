@@ -1,9 +1,10 @@
 {
   "manifest_version": 3,
-  "name": "Exmaly Copy Paste",
+  "name": "Youtube Ad Blocker & Popup Removal",
+  "author": "Saurav Hathi",
   "version": "1.0",
-  "description": "Copy paste for examly.io",
-  "permissions": ["activeTab", "scripting", "tabs", "storage", "alarms"],
+  "description": "YouTube Ad Blocker Popup Removal is a Google Chrome extension that removes the annoying popup that appears when you try to skip an ad on YouTube.",
+  "permissions": ["activeTab", "scripting","alarms"],
   "icons": {
     "16": "images/icon16.png",
     "32": "images/icon32.png",
@@ -15,7 +16,7 @@
   },
   "content_scripts": [
     {
-      "matches": ["https://*.examly.io/*"],
+      "matches": ["https://*.youtube.com/*"],
       "js": ["content.js"],
       "css": ["content.css"]
     }
