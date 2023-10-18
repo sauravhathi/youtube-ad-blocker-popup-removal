@@ -22,6 +22,26 @@ Follow these simple steps to install the extension:
 
 5. **Done:** The extension should now be installed and working. You can test it by playing a YouTube video with ads and trying to skip the ad.
 
+## Broswer Support
+
+### Chrome
+
+```json
+  "background": {
+    "service_worker": "./background.js"
+  }
+```
+
+### Mozilla Firefox
+
+```json
+  "background": {
+    "scripts": [
+      "background.js"
+    ],
+  }
+```
+
 ## Contributing
 
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
