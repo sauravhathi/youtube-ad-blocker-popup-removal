@@ -38,7 +38,7 @@ Follow these simple steps to install the extension:
   "background": {
     "scripts": [
       "background.js"
-    ],
+    ]
   }
 ```
 
