@@ -7,7 +7,7 @@ console.log('👨‍💻 Author: Saurav Hathi \n🌟 GitHub: https://github.com/
 function watchForElement() {
   const backdropSelector = "tp-yt-iron-overlay-backdrop.opened";
   const dialogSelector = "tp-yt-paper-dialog";
-  const playButtonSelector = ".ytp-play-button.ytp-button";
+  const playButtonSelector = "[data-title-no-tooltip='Play']";
 
   const donateBtn = document.createElement("button");
   donateBtn.innerHTML = "Donate";
@@ -37,6 +37,7 @@ function watchForElement() {
         // Add the donate button to the video owner's profile.
         p.appendChild(donateBtn);
       }
+      console.log("Dialog removed");
       observer.disconnect();
     }
 
